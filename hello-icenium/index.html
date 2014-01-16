@@ -22,7 +22,7 @@
 
         <!--Header-->
         <div data-role="header" data-position="fixed">
-            <h1>Home!</h1>
+            <h1>Hergergerome!</h1>
         </div>
 
         <!--Content-->
@@ -70,7 +70,7 @@
                         <input id="login-password" type="password" placeholder="Password" />
                     </div>
 
-                    <div class="buttons" class="ui-bar">
+                    <div class="buttons ui-bar">
                         <div id="button-area">
                             <div class="left">
                                 <input type="submit" id="login" data-icon="check" data-inline="true" class="left" value="Login" />
@@ -134,6 +134,7 @@
     <script type="text/javascript">
         document.addEventListener('deviceready', function () {
             navigator.splashscreen.hide();
+           	$('h1').html(device.platform);
         }, false);
     </script>
 </body>
